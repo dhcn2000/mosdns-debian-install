@@ -11,7 +11,7 @@
 
 ### 独立安装 (amd64 & arm64):
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/allanchen2019/mosdns-debian-install/v5/AutoSetup.sh)
+bash <(curl -Ls https://gh-proxy.com/https://raw.githubusercontent.com/dhcn2000/mosdns-debian-install/v5/AutoSetup.sh)
 ```
 
 ### 可选：每天7:00自动更新各种列表，`crontab -e` 后添加：
