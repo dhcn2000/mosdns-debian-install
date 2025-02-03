@@ -6,9 +6,9 @@ cd /opt/mosdns || exit
 mkdir bin
 cd bin || exit
 echo "下载mosdns和域名表……"
-wget --show-progress -t 5 -T 10 -cqO mosdns.zip https://github.com/IrineSistiana/mosdns/releases/latest/download/mosdns-linux-"$architecture".zip
-wget --show-progress -t 5 -T 10 -cqO accelerated-domains.china.conf https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/master/accelerated-domains.china.conf
-wget --show-progress -t 5 -T 10 -cqO apple.china.conf https://github.com/felixonmars/dnsmasq-china-list/raw/master/apple.china.conf
+wget --show-progress -t 5 -T 10 -cqO mosdns.zip https://gh-proxy.com/https://github.com/IrineSistiana/mosdns/releases/latest/download/mosdns-linux-"$architecture".zip
+wget --show-progress -t 5 -T 10 -cqO accelerated-domains.china.conf https://gh-proxy.com/https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/master/accelerated-domains.china.conf
+wget --show-progress -t 5 -T 10 -cqO apple.china.conf https://gh-proxy.com/https://github.com/felixonmars/dnsmasq-china-list/raw/master/apple.china.conf
 sed -r 's/.{8}//' accelerated-domains.china.conf > accelerated-domains.china.conf2
 sed -r 's/.{16}$//' accelerated-domains.china.conf2 > accelerated-domains.china.conf.raw.txt
 sed -r 's/.{8}//' apple.china.conf > apple.china.conf2
